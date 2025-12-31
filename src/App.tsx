@@ -44,12 +44,12 @@ function App() {
               </div>
 
               {/* Image Content */}
-              <div className="lg:col-span-7 mt-12 lg:mt-0 relative h-[500px] flex items-center justify-end">
+              <div className="lg:col-span-7 mt-12 lg:mt-0 relative min-h-[300px] sm:min-h-[400px] lg:h-[500px] flex items-center justify-center lg:justify-end">
                 {/* Purple Background Shape */}
-                <div className="absolute top-0 right-0 w-[90%] h-full bg-primary rounded-4xl -z-10 transform translate-x-4 -translate-y-4"></div>
+                <div className="absolute top-0 right-0 w-[95%] lg:w-[90%] h-full bg-primary rounded-4xl -z-10 transform translate-x-2 lg:translate-x-4 -translate-y-2 lg:-translate-y-4"></div>
 
                 {/* Main Image Container */}
-                <div className="relative z-10 w-[90%] flex flex-col items-center mr-8">
+                <div className="relative z-10 w-full lg:w-[90%] flex flex-col items-center lg:mr-8">
                   <div className="rounded-2xl overflow-hidden shadow-2xl w-full mb-6 bg-gray-50">
                     <video
                       src="/knowmediq.mp4"
