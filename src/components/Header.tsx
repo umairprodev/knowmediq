@@ -10,11 +10,7 @@ const Header = () => {
         <div className="flex justify-between h-24 items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
-            <img
-              src="https://d2faih2o3rqolw.cloudfront.net/images/imageknowmediq.png"
-              alt="KnowMediQ Logo"
-              className="h-10 w-auto"
-            />
+            <img src="/logo.png" alt="KnowMediQ Logo" className="h-10 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

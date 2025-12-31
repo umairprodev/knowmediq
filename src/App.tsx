@@ -154,7 +154,7 @@ function App() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                {/* Floating card overlap */}
+
                 <div className="absolute -bottom-8 -right-8 w-64 bg-white rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-6 hidden lg:block border border-gray-50">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
@@ -187,6 +187,7 @@ function App() {
                   the visibility needed to optimize clinic KPIs and patient
                   outcomes.
                 </p>
+
                 {/* The Impact */}
                 <div className="mb-10">
                   <h4 className="font-bold text-dark text-lg mb-6 border-l-4 border-secondary pl-4">
@@ -370,44 +371,142 @@ function App() {
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                 One Ecosystem. <br /> Total Coordination.
               </h2>
-              <p className="text-xl text-gray-300 leading-relaxed">
-                KnowMediQ centralizes the "paperwork of care" so you can focus
-                on being present for your loved one.
+              <p className="text-xl text-gray-300 leading-relaxed mb-10">
+                Caregiving is a team sport. KnowMediQ centralizes the “paperwork
+                of care” so you can focus on being present for your loved
+                one—while keeping everyone connected across home care and
+                virtual services.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-20">
+                {[
+                  {
+                    icon: "📄",
+                    title: "The Digital Health Profile",
+                    desc: "Store conditions, medications, routines, and “what works” in a shareable profile for new providers or PSWs.",
+                  },
+                  {
+                    icon: "🔗",
+                    title: "The Shared Care Hub",
+                    desc: "A central repository for HCP notes, visit summaries, and therapist documents—so nothing gets lost and everyone stays connected.",
+                  },
+                  {
+                    icon: "🌍",
+                    title: "Culturally Matched Care",
+                    desc: "Use our directory to find providers who fit your family’s specific language and cultural needs—because care isn’t one-size-fits-all.",
+                  },
+                  {
+                    icon: "💰",
+                    title: "Financial Organization",
+                    desc: "Keep invoices and service logs in one secure, audit-ready location (helpful for reimbursements, budgeting, and peace of mind).",
+                  },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors text-left"
+                  >
+                    <div className="text-4xl mb-6">{item.icon}</div>
+                    <h3 className="font-bold text-xl mb-3 text-white">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-400 leading-relaxed text-sm">
+                      {item.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="h-px w-24 bg-gradient-to-r from-transparent via-purple-500 to-transparent mx-auto mb-16 opacity-50"></div>
+
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+                Medical AI that personalizes your loved one’s health journey
+              </h3>
+              <p className="text-lg text-gray-300 leading-relaxed mb-4">
+                Care shouldn’t feel like guesswork. KnowMediQ’s medical AI
+                supports personalization across the full health journey by
+                helping you understand what’s happening now—and what to do next
+                (with consent and the right people involved).
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 mb-16">
               {[
                 {
-                  icon: "📄",
-                  title: "Digital Health Profile",
-                  desc: "Store conditions & routines.",
+                  icon: "🧭",
+                  title: "Who to see next",
+                  desc: "Based on your loved one’s profile, current needs, and preferences, the concierge can suggest the type of support to consider next (e.g., family doctor, nurse, pharmacist, therapist, PSW, nutritionist) and help you prepare questions.",
                 },
                 {
-                  icon: "🔗",
-                  title: "Shared Care Hub",
-                  desc: "Central repository for notes.",
+                  icon: "⚡",
+                  title: "Rapid access to care",
+                  desc: "When something changes, you get a clearer path to the right next step—so you spend less time unsure, waiting, or bouncing between options.",
                 },
                 {
-                  icon: "🌍",
-                  title: "Culturally Matched",
-                  desc: "Find providers who fit needs.",
+                  icon: "🛡️",
+                  title: "Preventive care, not just urgent care",
+                  desc: "Gentle follow-ups and early signals help catch issues sooner, support healthier routines, and reduce avoidable visits.",
                 },
                 {
-                  icon: "💰",
-                  title: "Financial Org",
-                  desc: "Keep invoices audit-ready.",
+                  icon: "�",
+                  title: "Clear summaries for providers",
+                  desc: "Turn day-to-day updates into a short, shareable snapshot that helps providers get up to speed faster and make better-informed decisions.",
                 },
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors"
+                  className="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors"
                 >
-                  <div className="text-3xl mb-4">{item.icon}</div>
-                  <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-400">{item.desc}</p>
+                  <div className="text-4xl mb-6">{item.icon}</div>
+                  <h3 className="font-bold text-xl mb-3 text-white">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-400 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
+            </div>
+
+            {/* What this changes for families */}
+            <div className="max-w-4xl mx-auto mt-24 bg-white/5 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-white/10">
+              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-10 text-center">
+                What this changes for families
+              </h3>
+              <ul className="grid gap-6 mb-12">
+                {[
+                  "Less repeating the story (everyone sees the same up-to-date profile and notes)",
+                  "Fewer missed details between visits (updates are captured while they’re fresh)",
+                  "A more connected ecosystem of care around your loved one (family + providers stay aligned)",
+                  "Faster, more confident access to the right care (know who to contact next and what to prepare—so you don’t lose time in uncertainty)",
+                  "More preventive care, less crisis care (early signals and follow-ups help address issues sooner and reduce avoidable visits)",
+                  "A clearer, more personalized path through the health journey—including “what’s next” and “who can help”",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center mt-0.5">
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    </div>
+                    <span className="text-gray-300 text-lg leading-relaxed">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="text-center">
+                <button className="bg-white hover:bg-gray-50 text-primary px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                  Join the Care Network
+                </button>
+              </div>
             </div>
           </div>
         </section>
