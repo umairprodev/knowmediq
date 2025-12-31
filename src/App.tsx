@@ -181,12 +181,13 @@ function App() {
               </div>
 
               {/* Text Side */}
-              <div className="pl-0 lg:pl-10">
-                <div className="flex items-center gap-4 mb-6">
+              <div className="pl-0 lg:pl-10 text-center lg:text-left">
+                <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
                   <div className="h-0.5 w-12 bg-secondary"></div>
                   <span className="text-secondary font-bold text-sm tracking-widest uppercase">
                     For MDs & Healthcare Organizations
                   </span>
+                  <div className="h-0.5 w-12 bg-secondary"></div>
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6 leading-tight">
                   Turn Patient Follow-ups into <br /> Actionable Insights
