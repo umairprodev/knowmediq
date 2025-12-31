@@ -302,59 +302,60 @@ function App() {
           </div>
         </section>
 
-        {/* Deep Dive: For Patients (Reverse Layout) */}
+        {/* Deep Dive: For Patients (Centered Layout) */}
         <section className="py-24 bg-light overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="lg:grid lg:grid-cols-2 gap-20 items-center">
-              {/* Text Side */}
-              <div className="pr-0 lg:pr-10 mb-12 lg:mb-0">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="h-0.5 w-12 bg-primary"></div>
-                  <span className="text-primary font-bold text-sm tracking-widest uppercase">
-                    For Patients
-                  </span>
-                </div>
-                <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6 leading-tight">
-                  A Health Journey That <br /> Speaks Your Language
-                </h2>
-                <p className="text-gray-500 mb-8 leading-relaxed">
-                  Recovery shouldn't be confusing. Our AI Concierge checks in on
-                  you with the warmth of a human and the precision of
-                  technology.
-                </p>
-                <div className="space-y-4">
-                  <div className="bg-white p-4 rounded-lg border border-gray-100 flex items-center gap-4">
-                    <span className="text-2xl">🗣️</span>
-                    <div>
-                      <h5 className="font-bold text-dark text-sm">
-                        Cultural & Language Alignment
-                      </h5>
-                    </div>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border border-gray-100 flex items-center gap-4">
-                    <span className="text-2xl">🛡️</span>
-                    <div>
-                      <h5 className="font-bold text-dark text-sm">
-                        Proactive Care Check-ins
-                      </h5>
-                    </div>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg border border-gray-100 flex items-center gap-4">
-                    <span className="text-2xl">💊</span>
-                    <div>
-                      <h5 className="font-bold text-dark text-sm">
-                        Medication Adherence Support
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-                <a
-                  href="#contact"
-                  className="mt-8 inline-block bg-primary hover:bg-purple-800 text-white px-8 py-3 rounded-md font-medium shadow-lg transition-colors"
-                >
-                  Join the Community
-                </a>
+            <div className="max-w-3xl mx-auto text-center">
+              {/* Centered Label */}
+              <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="h-0.5 w-12 bg-primary"></div>
+                <span className="text-primary font-bold text-sm tracking-widest uppercase">
+                  For Patients
+                </span>
+                <div className="h-0.5 w-12 bg-primary"></div>
               </div>
+
+              <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-6 leading-tight">
+                A Health Journey That <br /> Speaks Your Language
+              </h2>
+              <p className="text-gray-500 mb-10 leading-relaxed text-lg">
+                Recovery shouldn't be confusing. Our AI Concierge checks in on
+                you with the warmth of a human and the precision of technology.
+              </p>
+
+              <div className="space-y-4 max-w-lg mx-auto text-left">
+                <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-center gap-4">
+                  <span className="text-2xl">🗣️</span>
+                  <div>
+                    <h5 className="font-bold text-dark text-sm uppercase tracking-wide">
+                      Cultural & Language Alignment
+                    </h5>
+                  </div>
+                </div>
+                <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-center gap-4">
+                  <span className="text-2xl">🛡️</span>
+                  <div>
+                    <h5 className="font-bold text-dark text-sm uppercase tracking-wide">
+                      Proactive Care Check-ins
+                    </h5>
+                  </div>
+                </div>
+                <div className="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-center gap-4">
+                  <span className="text-2xl">💊</span>
+                  <div>
+                    <h5 className="font-bold text-dark text-sm uppercase tracking-wide">
+                      Medication Adherence Support
+                    </h5>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="#contact"
+                className="mt-12 inline-block bg-primary hover:bg-purple-800 text-white px-10 py-4 rounded-md font-bold shadow-lg transition-transform hover:-translate-y-1"
+              >
+                Join the Community
+              </a>
             </div>
           </div>
         </section>
