@@ -25,12 +25,18 @@ function App() {
                   <b>increased KPIs</b> for clinicians.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <button className="w-full sm:w-auto bg-primary cursor-pointer hover:bg-purple-800 text-white px-4 py-2 rounded-md font-medium transition-all shadow-xl shadow-purple-100 uppercase tracking-wide text-sm">
-                    Book a Demo for Your Clinic
-                  </button>
-                  <button className="w-full sm:w-auto bg-white cursor-pointer hover:bg-purple-50 text-primary border border-purple-200 hover:border-primary px-4 py-2 rounded-md font-medium transition-all shadow-md hover:shadow-lg uppercase tracking-wide text-sm">
+                  <a
+                    href="#contact"
+                    className="w-full sm:w-auto bg-primary text-center cursor-pointer hover:bg-purple-800 text-white px-4 py-2 rounded-md font-medium transition-all shadow-xl shadow-purple-100 uppercase tracking-wide text-sm"
+                  >
+                    Book a Demo
+                  </a>
+                  <a
+                    href="#contact"
+                    className="w-full sm:w-auto bg-white text-center cursor-pointer hover:bg-purple-50 text-primary border border-purple-200 hover:border-primary px-4 py-2 rounded-md font-medium transition-all shadow-md hover:shadow-lg uppercase tracking-wide text-sm"
+                  >
                     Empower Your Caregiving Journey
-                  </button>
+                  </a>
                 </div>
                 <p className="mt-6 text-xs text-gray-400">
                   Empowering continuity of care through cultural intelligence.
@@ -40,18 +46,20 @@ function App() {
               {/* Image Content */}
               <div className="lg:col-span-7 mt-12 lg:mt-0 relative h-[500px] flex items-center justify-end">
                 {/* Purple Background Shape */}
-                <div className="absolute top-0 right-0 w-[90%] h-full bg-primary rounded-[2rem] -z-10 transform translate-x-4 -translate-y-4"></div>
+                <div className="absolute top-0 right-0 w-[90%] h-full bg-primary rounded-4xl -z-10 transform translate-x-4 -translate-y-4"></div>
 
-                {/* Main Image */}
-                <div className="relative z-10 w-[90%] h-[90%] rounded-[2rem] overflow-hidden shadow-2xl mr-8">
-                  <img
-                    src="https://img.freepik.com/free-photo/doctor-holding-hands-old-patient_23-2148962308.jpg"
-                    alt="Caregiver holding hands"
-                    className="w-full h-full object-cover"
-                  />
+                {/* Main Image Container */}
+                <div className="relative z-10 w-[90%] flex flex-col items-center mr-8">
+                  <div className="rounded-4xl overflow-hidden shadow-2xl aspect-4/3 w-full mb-6">
+                    <img
+                      src="https://img.freepik.com/free-photo/doctor-consulting-patient-clinic_23-2148854033.jpg"
+                      alt="Doctor consulting patient in office"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
 
-                  {/* Floating Badge */}
-                  <div className="absolute bottom-6 left-6 bg-secondary text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
+                  {/* Badge below the picture */}
+                  <div className="bg-secondary/10 text-secondary border border-secondary/20 px-6 py-2 rounded-full text-sm font-bold tracking-wide uppercase">
                     AI Care Concierge
                   </div>
                 </div>
@@ -146,7 +154,7 @@ function App() {
             <div className="lg:grid lg:grid-cols-2 gap-20 items-center">
               {/* Image Side */}
               <div className="relative mb-12 lg:mb-0">
-                <div className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-square">
+                <div className="relative rounded-4xl overflow-hidden shadow-xl aspect-square">
                   <img
                     src="https://img.freepik.com/free-photo/african-american-doctor-patient-looking-tablet-solidarity-compassion_482257-23097.jpg"
                     alt="Clinician using tablet"
@@ -221,7 +229,7 @@ function App() {
                     ].map((item, idx) => (
                       <div key={idx} className="flex items-start gap-4">
                         <div
-                          className={`flex-shrink-0 w-12 h-12 rounded-xl ${item.color} flex items-center justify-center text-xl`}
+                          className={`shrink-0 w-12 h-12 rounded-xl ${item.color} flex items-center justify-center text-xl`}
                         >
                           {item.icon}
                         </div>
@@ -266,7 +274,7 @@ function App() {
                     ].map((item, idx) => (
                       <div key={idx} className="flex items-start gap-4">
                         <div
-                          className={`flex-shrink-0 w-12 h-12 rounded-xl ${item.color} flex items-center justify-center text-xl`}
+                          className={`shrink-0 w-12 h-12 rounded-xl ${item.color} flex items-center justify-center text-xl`}
                         >
                           {item.icon}
                         </div>
@@ -283,9 +291,12 @@ function App() {
                   </div>
                 </div>
 
-                <button className="bg-primary hover:bg-purple-800 text-white px-8 py-3 rounded-md font-medium shadow-lg transition-colors uppercase text-sm tracking-wide">
-                  Request an MD Demo
-                </button>
+                <a
+                  href="#contact"
+                  className="inline-block bg-primary hover:bg-purple-800 text-white px-8 py-3 rounded-md font-medium shadow-lg transition-colors uppercase text-sm tracking-wide"
+                >
+                  Book a Demo
+                </a>
               </div>
             </div>
           </div>
@@ -337,40 +348,28 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <button className="mt-8 bg-primary hover:bg-purple-800 text-white px-8 py-3 rounded-md font-medium shadow-lg transition-colors">
+                <a
+                  href="#contact"
+                  className="mt-8 inline-block bg-primary hover:bg-purple-800 text-white px-8 py-3 rounded-md font-medium shadow-lg transition-colors"
+                >
                   Join the Community
-                </button>
-              </div>
-
-              {/* Image Side */}
-              <div className="relative">
-                <div className="relative rounded-[2rem] overflow-hidden shadow-xl aspect-square">
-                  <img
-                    src="https://img.freepik.com/free-photo/senior-woman-talking-her-friendly-doctor_23-2149029990.jpg"
-                    alt="Patient talking to doctor"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </section>
 
         {/* Deep Dive: Caregivers */}
-        <section className="py-24 bg-dark text-white relative overflow-hidden">
-          {/* Background Glows */}
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-900/40 rounded-full blur-[120px] pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-900/40 rounded-full blur-[120px] pointer-events-none"></div>
-
+        <section className="py-24 bg-white relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="text-gray-400 font-bold uppercase tracking-widest text-sm mb-4 block">
+              <span className="text-secondary font-bold uppercase tracking-widest text-sm mb-4 block">
                 For Family Caregivers
               </span>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold text-dark mb-6">
                 One Ecosystem. <br /> Total Coordination.
               </h2>
-              <p className="text-xl text-gray-300 leading-relaxed mb-10">
+              <p className="text-xl text-gray-500 leading-relaxed mb-10">
                 Caregiving is a team sport. KnowMediQ centralizes the “paperwork
                 of care” so you can focus on being present for your loved
                 one—while keeping everyone connected across home care and
@@ -402,25 +401,25 @@ function App() {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors text-left"
+                    className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-left"
                   >
                     <div className="text-4xl mb-6">{item.icon}</div>
-                    <h3 className="font-bold text-xl mb-3 text-white">
+                    <h3 className="font-bold text-xl mb-3 text-dark">
                       {item.title}
                     </h3>
-                    <p className="text-gray-400 leading-relaxed text-sm">
+                    <p className="text-gray-500 leading-relaxed text-sm">
                       {item.desc}
                     </p>
                   </div>
                 ))}
               </div>
 
-              <div className="h-px w-24 bg-gradient-to-r from-transparent via-purple-500 to-transparent mx-auto mb-16 opacity-50"></div>
+              <div className="h-px w-24 bg-gradient-to-r from-transparent via-purple-200 to-transparent mx-auto mb-16 opacity-50"></div>
 
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+              <h3 className="text-2xl lg:text-3xl font-bold text-dark mb-6">
                 Medical AI that personalizes your loved one’s health journey
               </h3>
-              <p className="text-lg text-gray-300 leading-relaxed mb-4">
+              <p className="text-lg text-gray-500 leading-relaxed mb-4">
                 Care shouldn’t feel like guesswork. KnowMediQ’s medical AI
                 supports personalization across the full health journey by
                 helping you understand what’s happening now—and what to do next
@@ -453,20 +452,20 @@ function App() {
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors"
+                  className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="text-4xl mb-6">{item.icon}</div>
-                  <h3 className="font-bold text-xl mb-3 text-white">
+                  <h3 className="font-bold text-xl mb-3 text-dark">
                     {item.title}
                   </h3>
-                  <p className="text-gray-400 leading-relaxed">{item.desc}</p>
+                  <p className="text-gray-500 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
 
             {/* What this changes for families */}
-            <div className="max-w-4xl mx-auto mt-24 bg-white/5 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-white/10">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-10 text-center">
+            <div className="max-w-4xl mx-auto mt-24 bg-purple-50 rounded-3xl p-8 lg:p-12 border border-purple-100">
+              <h3 className="text-2xl lg:text-3xl font-bold text-dark mb-10 text-center">
                 What this changes for families
               </h3>
               <ul className="grid gap-6 mb-12">
@@ -479,7 +478,7 @@ function App() {
                   "A clearer, more personalized path through the health journey—including “what’s next” and “who can help”",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center mt-0.5">
+                    <div className="shrink-0 w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center mt-0.5">
                       <svg
                         className="w-4 h-4"
                         fill="none"
@@ -494,7 +493,7 @@ function App() {
                         />
                       </svg>
                     </div>
-                    <span className="text-gray-300 text-lg leading-relaxed">
+                    <span className="text-gray-600 text-lg leading-relaxed">
                       {item}
                     </span>
                   </li>
@@ -502,10 +501,91 @@ function App() {
               </ul>
 
               <div className="text-center">
-                <button className="bg-white hover:bg-gray-50 text-primary px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                <a
+                  href="#contact"
+                  className="inline-block bg-primary hover:bg-purple-800 text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+                >
                   Join the Care Network
-                </button>
+                </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="py-24 bg-light relative">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-4xl shadow-2xl p-8 lg:p-16 border border-gray-50">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-dark mb-4">
+                  Book a Demo
+                </h2>
+                <p className="text-gray-500">
+                  Ready to transform your care journey? Fill out the form below
+                  and our team will get back to you shortly.
+                </p>
+              </div>
+
+              <form
+                className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                onSubmit={(e) => e.preventDefault()}
+              >
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-dark uppercase tracking-wide">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="John Doe"
+                    className="w-full bg-light border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-secondary transition-colors"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-dark uppercase tracking-wide">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="john@company.com"
+                    className="w-full bg-light border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-secondary transition-colors"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-dark uppercase tracking-wide">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    placeholder="+1 (555) 000-0000"
+                    className="w-full bg-light border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-secondary transition-colors"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-dark uppercase tracking-wide">
+                    Organization
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Hospital / Clinic Name"
+                    className="w-full bg-light border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-secondary transition-colors"
+                  />
+                </div>
+                <div className="md:col-span-2 space-y-2">
+                  <label className="text-sm font-bold text-dark uppercase tracking-wide">
+                    Message
+                  </label>
+                  <textarea
+                    rows={4}
+                    placeholder="How can we help you?"
+                    className="w-full bg-light border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-secondary transition-colors resize-none"
+                  ></textarea>
+                </div>
+                <div className="md:col-span-2 mt-4 text-center">
+                  <button className="bg-secondary hover:bg-blue-700 text-white px-12 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 w-full md:w-auto">
+                    Submit Request
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </section>
