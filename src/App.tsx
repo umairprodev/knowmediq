@@ -57,7 +57,7 @@ function App() {
                       muted
                       loop
                       playsInline
-                      className="w-full h-full object-cover shrink-0"
+                      className="aspect-video object-cover shrink-0"
                     />
                   </div>
 
