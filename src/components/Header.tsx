@@ -68,6 +68,13 @@ const Header = () => {
               href="#"
               className="text-gray-600 hover:text-primary font-medium text-sm tracking-wide uppercase transition-colors"
             >
+              Solutions
+            </a>
+
+            <a
+              href="#"
+              className="text-gray-600 hover:text-primary font-medium text-sm tracking-wide uppercase transition-colors"
+            >
               Blog
             </a>
             <a
@@ -162,6 +169,12 @@ const Header = () => {
                 </a>
               </div>
             </div>
+            <a
+              href="#"
+              className="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-purple-50"
+            >
+              Solutions
+            </a>
             <a
               href="#"
               className="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-purple-50"

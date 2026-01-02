@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-800">
+      <Header />
       <main>
         {/* Hero Section */}
         <section className="relative pt-10 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-white">
@@ -597,6 +598,7 @@ function App() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }
