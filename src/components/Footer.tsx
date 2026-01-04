@@ -180,14 +180,14 @@ const Footer = () => {
             <p>© 2025 KnowMediQ, All rights reserved —</p>
             <div className="flex items-center gap-1">
               <a
-                href="#"
+                href="https://d2faih2o3rqolw.cloudfront.net/privacy"
                 className="text-blue-400 hover:text-blue-300 transition-colors"
               >
                 Privacy Policy
               </a>
               <span>/</span>
               <a
-                href="#"
+                href="https://d2faih2o3rqolw.cloudfront.net/terms"
                 className="text-blue-400 hover:text-blue-300 transition-colors"
               >
                 Terms & Conditions
