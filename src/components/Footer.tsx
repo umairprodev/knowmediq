@@ -110,7 +110,7 @@ const Footer = () => {
             <div className="flex gap-6 mb-10">
               <a
                 href="#"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-[#03a9f4] hover:text-white transition-colors"
               >
                 <svg
                   width="20"
@@ -123,7 +123,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-[#03a9f4] hover:text-white transition-colors"
               >
                 <svg
                   width="20"
@@ -136,7 +136,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-[#03a9f4] hover:text-white transition-colors"
               >
                 <svg
                   width="20"
@@ -149,7 +149,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-[#03a9f4] hover:text-white transition-colors"
               >
                 <svg
                   width="20"
@@ -169,7 +169,7 @@ const Footer = () => {
               <div className="bg-white p-[10px] rounded-md">
                 <a
                   href="https://d2faih2o3rqolw.cloudfront.net/partenariat"
-                  className="block bg-[#0f121a] hover:bg-[#74b9ff] text-white px-4 py-3 text-center font-semibold text-[14px] rounded-[10px] no-underline transition-all duration-200 ease-in-out"
+                  className="block bg-[#0f121a] hover:bg-[#03a9f4] hover:translate-y-[-2px] duration-300 text-white px-4 py-3 text-center font-semibold text-[14px] rounded-[10px] no-underline transition-all duration-200 ease-in-out"
                 >
                   Partnership
                 </a>
@@ -177,7 +177,7 @@ const Footer = () => {
               <div className="bg-white p-[10px] rounded-md">
                 <a
                   href="https://d2faih2o3rqolw.cloudfront.net/devenir-prestataire"
-                  className="block bg-[#0f121a] hover:bg-[#74b9ff] text-white px-4 py-3 text-center font-semibold text-[14px] rounded-[10px] no-underline transition-all duration-200 ease-in-out whitespace-nowrap"
+                  className="block bg-[#0f121a] hover:bg-[#03a9f4] hover:translate-y-[-2px] duration-300 text-white px-4 py-3 text-center font-semibold text-[14px] rounded-[10px] no-underline transition-all duration-200 ease-in-out whitespace-nowrap"
                 >
                   Becoming a service provider
                 </a>
