@@ -29,7 +29,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full">
+    <header className="z-50 w-full">
       {/* Top Bar */}
       <div className="bg-black text-white py-2 px-6 sm:px-10 lg:px-16">
         <div className="max-w-screen-2xl mx-auto flex justify-end gap-6 text-[10px] sm:text-xs font-medium tracking-widest uppercase">
