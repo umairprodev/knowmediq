@@ -33,10 +33,16 @@ const Header = () => {
       {/* Top Bar */}
       <div className="bg-black text-white py-2 px-6 sm:px-10 lg:px-16">
         <div className="max-w-screen-2xl mx-auto flex justify-end gap-6 text-[10px] sm:text-xs font-medium tracking-widest uppercase">
-          <a href="#" className="hover:text-primary transition-colors">
+          <a
+            href="https://knowmediq-dev.auth.ca-central-1.amazoncognito.com/login?client_id=25naet594tdqusl72un7opjdng&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Flaonwflijb.execute-api.ca-central-1.amazonaws.com%2Fdev%2Fcallback&state=eyJmbG93IjoicHJvZmVzc2lvbmFsIiwicmVkaXJlY3RUbyI6Imh0dHBzOi8vZDJmYWloMm8zcnFvbHcuY2xvdWRmcm9udC5uZXQvcmVkaXJlY3QtYWZ0ZXItbG9naW4iLCJub25jZSI6InhKUTduMEVrWmdSUFZxOEVRVkc5QTZDRFBnbkxnUmxXLWpfNWpZRFdfZE0ifQ&nonce=xJQ7n0EkZgRPVq8EQVG9A6CDPgnLgRlW-j_5jYDW_dM"
+            className="hover:text-primary transition-colors"
+          >
             Provider Area
           </a>
-          <a href="#" className="hover:text-primary transition-colors">
+          <a
+            href="https://knowmediq-dev.auth.ca-central-1.amazoncognito.com/login?client_id=25naet594tdqusl72un7opjdng&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Flaonwflijb.execute-api.ca-central-1.amazonaws.com%2Fdev%2Fcallback&state=eyJmbG93IjoicHJvZmVzc2lvbmFsIiwicmVkaXJlY3RUbyI6Imh0dHBzOi8vZDJmYWloMm8zcnFvbHcuY2xvdWRmcm9udC5uZXQvcmVkaXJlY3QtYWZ0ZXItbG9naW4iLCJub25jZSI6InhKUTduMEVrWmdSUFZxOEVRVkc5QTZDRFBnbkxnUmxXLWpfNWpZRFdfZE0ifQ&nonce=xJQ7n0EkZgRPVq8EQVG9A6CDPgnLgRlW-j_5jYDW_dM"
+            className="hover:text-primary transition-colors"
+          >
             Customer Area
           </a>
         </div>
