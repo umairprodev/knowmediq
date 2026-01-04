@@ -49,7 +49,7 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-white/95 backdrop-blur-md shadow-md relative">
+      <nav className="bg-white backdrop-blur-md shadow-xl relative">
         <div className="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
           <div className="flex justify-between h-20 items-center">
             {/* Logo */}
