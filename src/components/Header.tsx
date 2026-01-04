@@ -98,7 +98,7 @@ const Header = () => {
                 href="#"
                 className="text-gray-700 hover:text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
               >
-                SOLUTIONS
+                AI SOLUTIONS
               </a>
 
               <a
