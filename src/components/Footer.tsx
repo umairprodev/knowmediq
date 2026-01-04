@@ -166,18 +166,18 @@ const Footer = () => {
               Useful links
             </h4>
             <div className="space-y-4 max-w-[280px]">
-              <div className="bg-white p-1 rounded-md">
+              <div className="bg-white p-[10px] rounded-md">
                 <a
                   href="https://d2faih2o3rqolw.cloudfront.net/partenariat"
-                  className="block bg-[#0f172a] hover:bg-[#74b9ff] text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors"
+                  className="block bg-[#0f121a] hover:bg-[#74b9ff] text-white px-4 py-3 text-center font-semibold text-[14px] rounded-[10px] no-underline transition-all duration-200 ease-in-out"
                 >
                   Partnership
                 </a>
               </div>
-              <div className="bg-white p-1 rounded-md">
+              <div className="bg-white p-[10px] rounded-md">
                 <a
                   href="https://d2faih2o3rqolw.cloudfront.net/devenir-prestataire"
-                  className="block bg-[#0f172a] hover:bg-[#74b9ff] text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors whitespace-nowrap"
+                  className="block bg-[#0f121a] hover:bg-[#74b9ff] text-white px-4 py-3 text-center font-semibold text-[14px] rounded-[10px] no-underline transition-all duration-200 ease-in-out whitespace-nowrap"
                 >
                   Becoming a service provider
                 </a>
