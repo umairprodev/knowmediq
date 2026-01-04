@@ -104,48 +104,59 @@ const Footer = () => {
 
           {/* Socials & Links Section */}
           <div className="text-left">
-            <h4 className="font-bold text-[17px] mb-8 tracking-wide text-gray-100">
+            <h4 className="font-semibold text-[16px] mb-8 tracking-wide text-gray-100">
               Social Networks
             </h4>
             <div className="flex gap-6 mb-10">
-              <a href="#" className="text-[#03a9f4]  transition-colors">
+              <a href="#" className="text-[#7cc2f8] transition-colors">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2m-.2 2A3.6 3.6 0 004 7.6v8.8A3.6 3.6 0 007.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6A3.6 3.6 0 0016.4 4H7.6m5.4 2c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0 2a4 4 0 100 8 4 4 0 000-8m4.9-.5a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z" />
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                 </svg>
               </a>
-              <a href="#" className="text-[#03a9f4] transition-colors">
+              <a href="#" className="text-[#7cc2f8] transition-colors">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
-                  <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7h-2.54v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 008.44-9.9c0-5.53-4.5-10.02-10-10.02z" />
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                 </svg>
               </a>
-              <a href="#" className="text-[#03a9f4] transition-colors">
+              <a href="#" className="text-[#7cc2f8] transition-colors">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
-                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a2.7 2.7 0 0 0-2.7-2.7c-1.2 0-2.3 1.1-2.3 2.5v5.5h-2.5v-8.5h2.5v1.2a3 3 0 0 1 2.5-1.5 3.5 3.5 0 0 1 3.5 3.5v5.3h-2.5m-11-8.5h2.5v8.5h-2.5v-8.5m1.25-4.25a1.5 1.5 0 1 1-1.5 1.5 1.5 1.5 0 0 1 1.5-1.5z" />
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               </a>
-              <a href="#" className="text-[#03a9f4] transition-colors">
+              <a href="#" className="text-[#7cc2f8] transition-colors">
                 <svg
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
-                  <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83a2.79 2.79 0 0 1-1.94 2C18.42 19 12 19 12 19s-6.42 0-7.62-.17a2.79 2.79 0 0 1-1.94-2C2.16 15.8 2 14.19 2 12l.06-2.17c.07-.6.1-1.29.16-2.09.07-.8.15-1.43.28-1.9a2.79 2.79 0 0 1 1.94-2C5.58 3.67 12 3.67 12 3.67s6.42 0 7.62.17a2.79 2.79 0 0 1 1.94 2z" />
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon
+                    points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                    fill="currentColor"
+                  ></polygon>
                 </svg>
               </a>
             </div>
@@ -154,7 +165,7 @@ const Footer = () => {
               Useful links
             </h4>
             <div className="space-y-4 max-w-[280px]">
-              <div className="bg-white p-[10px] rounded-md">
+              <div className="bg-white p-[12px] rounded-md">
                 <a
                   href="https://d2faih2o3rqolw.cloudfront.net/partenariat"
                   className="block bg-[#0f121a] hover:bg-[#03a9f4] hover:translate-y-[-2px] duration-300 text-white px-4 py-3 text-center font-semibold text-[14px] rounded-[10px] no-underline transition-all duration-200 ease-in-out"
@@ -162,7 +173,7 @@ const Footer = () => {
                   Partnership
                 </a>
               </div>
-              <div className="bg-white p-[10px] rounded-md">
+              <div className="bg-white p-[12px] rounded-md">
                 <a
                   href="https://d2faih2o3rqolw.cloudfront.net/devenir-prestataire"
                   className="block bg-[#0f121a] hover:bg-[#03a9f4] hover:translate-y-[-2px] duration-300 text-white px-4 py-3 text-center font-semibold text-[14px] rounded-[10px] no-underline transition-all duration-200 ease-in-out whitespace-nowrap"
