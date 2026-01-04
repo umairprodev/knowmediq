@@ -165,19 +165,23 @@ const Footer = () => {
             <h4 className="font-bold text-[17px] mb-6 tracking-wide text-gray-100 uppercase">
               Useful links
             </h4>
-            <div className="space-y-4 max-w-[260px]">
-              <a
-                href="#"
-                className="block bg-[#0f172a] hover:bg-slate-800 border-2 border-white rounded-lg px-8 py-3 text-center font-bold text-[14px] transition-colors"
-              >
-                Partnership
-              </a>
-              <a
-                href="#"
-                className="block bg-[#0f172a] hover:bg-slate-800 border-2 border-white rounded-lg px-6 py-3 text-center font-bold text-[14px] transition-colors whitespace-nowrap"
-              >
-                Becoming a service provider
-              </a>
+            <div className="space-y-4 max-w-[280px]">
+              <div className="bg-white p-1 rounded-md">
+                <a
+                  href="#"
+                  className="block bg-[#00aeef] hover:bg-[#0096ce] text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors"
+                >
+                  Partnership
+                </a>
+              </div>
+              <div className="bg-white p-1 rounded-md">
+                <a
+                  href="#"
+                  className="block bg-[#0f172a] hover:bg-slate-800 text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors whitespace-nowrap"
+                >
+                  Becoming a service provider
+                </a>
+              </div>
             </div>
           </div>
         </div>
