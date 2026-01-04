@@ -169,7 +169,7 @@ const Footer = () => {
               <div className="bg-white p-1 rounded-md">
                 <a
                   href="#"
-                  className="block bg-[#00aeef] hover:bg-[#0096ce] text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors"
+                  className="block bg-[#0f172a] hover:bg-[#74b9ff] text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors"
                 >
                   Partnership
                 </a>
@@ -177,7 +177,7 @@ const Footer = () => {
               <div className="bg-white p-1 rounded-md">
                 <a
                   href="#"
-                  className="block bg-[#0f172a] hover:bg-slate-800 text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors whitespace-nowrap"
+                  className="block bg-[#0f172a] hover:bg-[#74b9ff] text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors whitespace-nowrap"
                 >
                   Becoming a service provider
                 </a>
