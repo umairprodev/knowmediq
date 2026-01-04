@@ -101,7 +101,7 @@ const Header = () => {
               </div>
 
               <a
-                href="#"
+                href="https://d2faih2o3rqolw.cloudfront.net/solutions"
                 className="text-gray-700 hover:text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
               >
                 AI SOLUTIONS
@@ -203,9 +203,8 @@ const Header = () => {
           {/* Mobile Links */}
           <div className="flex flex-col items-center space-y-8 grow">
             <a
-              href="#"
+              href="https://d2faih2o3rqolw.cloudfront.net/"
               className="text-primary font-medium text-2xl"
-              onClick={() => setIsOpen(false)}
             >
               Welcome
             </a>
@@ -244,7 +243,6 @@ const Header = () => {
                     key={index}
                     href={service.url}
                     className="block text-gray-500 text-lg hover:text-primary transition-colors py-1"
-                    onClick={() => setIsOpen(false)}
                   >
                     {service.label}
                   </a>
@@ -253,33 +251,29 @@ const Header = () => {
             </div>
 
             <a
-              href="#"
+              href="https://d2faih2o3rqolw.cloudfront.net/solutions"
               className="text-gray-600 font-medium text-2xl"
-              onClick={() => setIsOpen(false)}
             >
               Solutions
             </a>
 
             <a
-              href="#"
+              href="https://d2faih2o3rqolw.cloudfront.net/blog"
               className="text-gray-600 font-medium text-2xl"
-              onClick={() => setIsOpen(false)}
             >
               Blog
             </a>
 
             <a
-              href="#"
+              href="https://d2faih2o3rqolw.cloudfront.net/contact"
               className="text-gray-600 font-medium text-2xl"
-              onClick={() => setIsOpen(false)}
             >
               Contact
             </a>
 
             <a
-              href="#"
+              href="https://d2faih2o3rqolw.cloudfront.net/english"
               className="text-gray-600 font-medium text-2xl"
-              onClick={() => setIsOpen(false)}
             >
               English
             </a>
@@ -288,7 +282,6 @@ const Header = () => {
               <a
                 href="https://knowmediq-dev.auth.ca-central-1.amazoncognito.com/login?client_id=25naet594tdqusl72un7opjdng&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Flaonwflijb.execute-api.ca-central-1.amazonaws.com%2Fdev%2Fcallback&state=eyJmbG93IjoicGF0aWVudCIsInJlZGlyZWN0VG8iOiJodHRwczovL2QyZmFpaDJvM3Jxb2x3LmNsb3VkZnJvbnQubmV0L3JlZGlyZWN0LWFmdGVyLWxvZ2luIiwibm9uY2UiOiJJblg4NXVmVF9tMG1WREE4VkxHVTE3M2dPcTJJdTVuNGxVY1dBczcyNV9RIn0&nonce=InX85ufT_m0mVDA8VLGU173gOq2Iu5n4lUcWAs725_Q"
                 className="block w-full bg-secondary text-white py-4 font-bold text-sm tracking-widest uppercase shadow-lg text-center"
-                onClick={() => setIsOpen(false)}
               >
                 JOIN
               </a>
