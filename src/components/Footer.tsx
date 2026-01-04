@@ -168,7 +168,7 @@ const Footer = () => {
             <div className="space-y-4 max-w-[280px]">
               <div className="bg-white p-1 rounded-md">
                 <a
-                  href="#"
+                  href="https://d2faih2o3rqolw.cloudfront.net/partenariat"
                   className="block bg-[#0f172a] hover:bg-[#74b9ff] text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors"
                 >
                   Partnership
@@ -176,7 +176,7 @@ const Footer = () => {
               </div>
               <div className="bg-white p-1 rounded-md">
                 <a
-                  href="#"
+                  href="https://d2faih2o3rqolw.cloudfront.net/devenir-prestataire"
                   className="block bg-[#0f172a] hover:bg-[#74b9ff] text-white py-3 text-center font-bold text-[14px] rounded-md transition-colors whitespace-nowrap"
                 >
                   Becoming a service provider
