@@ -8,7 +8,7 @@ function App() {
       <main>
         {/* Hero Section */}
         <section className="relative pt-10 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
             <div className="lg:grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
               {/* Text Content */}
               <div className="lg:col-span-5 text-center lg:text-left z-10">
@@ -72,7 +72,7 @@ function App() {
 
         {/* Three Pillars Section (Grid Style) */}
         <section className="py-24 bg-light">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
             <div className="lg:grid lg:grid-cols-12 gap-16">
               {/* Heading Side */}
               <div className="lg:col-span-4 mb-12 lg:mb-0">
@@ -152,7 +152,7 @@ function App() {
 
         {/* Deep Dive: Clinicians (Network Style) */}
         <section className="py-24 bg-white overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
             <div className="lg:grid lg:grid-cols-2 gap-20 items-center">
               {/* Image Side */}
               <div className="relative mb-12 lg:mb-0">
@@ -307,7 +307,7 @@ function App() {
 
         {/* Deep Dive: For Patients (Centered Layout) */}
         <section className="py-24 bg-light overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
             <div className="max-w-3xl mx-auto text-center">
               {/* Centered Label */}
               <div className="flex items-center justify-center gap-4 mb-6">
@@ -365,7 +365,7 @@ function App() {
 
         {/* Deep Dive: Caregivers */}
         <section className="py-24 bg-white relative overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="max-w-screen-2xl mx-auto px-6 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div className="flex items-center justify-center gap-4 mb-4">
                 <div className="h-0.5 w-12 bg-secondary"></div>

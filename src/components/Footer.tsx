@@ -1,72 +1,74 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#0B0F19] text-white pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+    <footer className="bg-[#0f172a] text-white pt-24 pb-12 font-sans">
+      <div className="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20 px-4 md:px-0">
           {/* Logo Section */}
-          <div>
-            <div className="bg-white p-4 inline-block rounded-md mb-6">
+          <div className="flex flex-col items-center lg:items-start">
+            <div className="bg-white p-6 rounded-sm inline-block">
               <img
                 src="/logo.png"
                 alt="KnowMediQ Logo"
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </div>
           </div>
 
           {/* Contact Information */}
-          <div>
-            <h4 className="font-bold text-lg mb-6 text-white">
+          <div className="text-left">
+            <h4 className="font-bold text-[17px] mb-8 tracking-wide text-gray-100">
               Contact Information
             </h4>
-            <ul className="space-y-4 text-gray-400">
-              <li className="flex items-start gap-3">
-                <span className="text-secondary mt-1">
+            <ul className="space-y-6">
+              <li className="flex items-center gap-4">
+                <div className="text-blue-400 shrink-0">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    viewBox="0 0 20 20"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
                     fill="currentColor"
                   >
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                   </svg>
-                </span>
-                <span className="text-secondary hover:text-blue-400 transition-colors cursor-pointer">
+                </div>
+                <a
+                  href="tel:855-904-5898"
+                  className="text-[14px] font-medium text-blue-400 hover:text-blue-300"
+                >
                   855-904-5898
-                </span>
+                </a>
               </li>
-              <li className="flex items-start gap-3">
-                <span className="text-secondary mt-1">
+
+              <li className="flex items-start gap-4">
+                <div className="text-blue-400 mt-1 shrink-0">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    viewBox="0 0 20 20"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
                     fill="currentColor"
                   >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                      clipRule="evenodd"
-                    />
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" />
                   </svg>
-                </span>
-                <span>Montreal, Greater Montreal, Quebec, GTA</span>
+                </div>
+                <p className="text-[14px] font-medium text-gray-300">
+                  Montreal, Greater Montreal, Quebec, GTA
+                </p>
               </li>
-              <li className="flex items-start gap-3">
-                <span className="text-secondary mt-1">
+
+              <li className="flex items-center gap-4">
+                <div className="text-blue-400 shrink-0">
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    viewBox="0 0 20 20"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
                     fill="currentColor"
                   >
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                   </svg>
-                </span>
+                </div>
                 <a
                   href="mailto:info@knowmediq.ca"
-                  className="text-secondary hover:text-blue-400 transition-colors"
+                  className="text-[14px] font-medium text-blue-400 hover:text-blue-300"
                 >
                   info@knowmediq.ca
                 </a>
@@ -74,106 +76,131 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Opening Hours */}
-          <div>
-            <h4 className="font-bold text-lg mb-6 text-white">Opening Hours</h4>
-            <div className="space-y-6 text-gray-400">
+          {/* Schedules Section */}
+          <div className="text-left">
+            <h4 className="font-bold text-[17px] mb-8 tracking-wide text-gray-100">
+              Schedules
+            </h4>
+            <div className="space-y-8">
               <div>
-                <h5 className="text-secondary font-bold mb-1">
+                <h5 className="text-blue-400 font-bold text-[14px] mb-2">
                   Customer Service
                 </h5>
-                <p>Monday - Friday :</p>
-                <p>08:00 AM - 06:00 PM</p>
+                <p className="text-gray-300 text-[13px] font-medium leading-relaxed">
+                  Monday - Friday: <br />
+                  8:00 AM - 6:00 PM
+                </p>
               </div>
               <div>
-                <h5 className="text-secondary font-bold mb-1">
-                  Appointment Booking
+                <h5 className="text-blue-400 font-bold text-[14px] mb-2">
+                  Book an appointment
                 </h5>
-                <p>24/7 - Confirmation in 24 hours</p>
+                <p className="text-gray-300 text-[13px] font-medium">
+                  24/7 - Confirmation within 24 hours
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Socials & Useful Links */}
-          <div>
-            <h4 className="font-bold text-lg mb-6 text-white">
+          {/* Socials & Links Section */}
+          <div className="text-left">
+            <h4 className="font-bold text-[17px] mb-8 tracking-wide text-gray-100">
               Social Networks
             </h4>
-            <div className="flex gap-4 mb-10">
-              {["instagram", "facebook", "linkedin", "youtube"].map(
-                (social) => (
-                  <a
-                    key={social}
-                    href="#"
-                    className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-secondary hover:text-white transition-all"
-                  >
-                    <span className="sr-only">{social}</span>
-                    {social === "instagram" && (
-                      <svg
-                        className="w-4 h-4"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                      </svg>
-                    )}
-                    {social === "facebook" && (
-                      <svg
-                        className="w-4 h-4"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-                      </svg>
-                    )}
-                    {social === "linkedin" && (
-                      <svg
-                        className="w-4 h-4"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h5v-8.381c0-4.615 5.116-4.925 5.014 0v8.381h5v-9.921c0-6.97-9.122-5.716-10.046-2.828l.054-3.003z" />
-                      </svg>
-                    )}
-                    {social === "youtube" && (
-                      <svg
-                        className="w-4 h-4"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                      </svg>
-                    )}
-                  </a>
-                )
-              )}
+            <div className="flex gap-6 mb-10">
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2m-.2 2A3.6 3.6 0 004 7.6v8.8A3.6 3.6 0 007.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6A3.6 3.6 0 0016.4 4H7.6m5.4 2c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0 2a4 4 0 100 8 4 4 0 000-8m4.9-.5a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7h-2.54v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 008.44-9.9c0-5.53-4.5-10.02-10-10.02z" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a2.7 2.7 0 0 0-2.7-2.7c-1.2 0-2.3 1.1-2.3 2.5v5.5h-2.5v-8.5h2.5v1.2a3 3 0 0 1 2.5-1.5 3.5 3.5 0 0 1 3.5 3.5v5.3h-2.5m-11-8.5h2.5v8.5h-2.5v-8.5m1.25-4.25a1.5 1.5 0 1 1-1.5 1.5 1.5 1.5 0 0 1 1.5-1.5z" />
+                </svg>
+              </a>
+              <a
+                href="#"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83a2.79 2.79 0 0 1-1.94 2C18.42 19 12 19 12 19s-6.42 0-7.62-.17a2.79 2.79 0 0 1-1.94-2C2.16 15.8 2 14.19 2 12l.06-2.17c.07-.6.1-1.29.16-2.09.07-.8.15-1.43.28-1.9a2.79 2.79 0 0 1 1.94-2C5.58 3.67 12 3.67 12 3.67s6.42 0 7.62.17a2.79 2.79 0 0 1 1.94 2z" />
+                </svg>
+              </a>
             </div>
 
-            <h4 className="font-bold text-lg mb-6 text-white">Useful Links</h4>
-            <div className="space-y-3">
-              <button className="w-full bg-[#1A1F2B] hover:bg-[#252b3b] text-white py-3 px-4 rounded border border-gray-700 font-bold transition-all text-sm">
+            <h4 className="font-bold text-[17px] mb-6 tracking-wide text-gray-100 uppercase">
+              Useful links
+            </h4>
+            <div className="space-y-4 max-w-[260px]">
+              <a
+                href="#"
+                className="block bg-[#0f172a] hover:bg-slate-800 border-2 border-white rounded-lg px-8 py-3 text-center font-bold text-[14px] transition-colors"
+              >
                 Partnership
-              </button>
-              <button className="w-full bg-[#1A1F2B] hover:bg-[#252b3b] text-white py-3 px-4 rounded border border-gray-700 font-bold transition-all text-sm">
-                Become a Provider
-              </button>
+              </a>
+              <a
+                href="#"
+                className="block bg-[#0f172a] hover:bg-slate-800 border-2 border-white rounded-lg px-6 py-3 text-center font-bold text-[14px] transition-colors whitespace-nowrap"
+              >
+                Becoming a service provider
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-500 text-xs">
-          <div className="flex flex-col md:flex-row justify-center gap-2 md:gap-4">
-            <span>
-              &copy; {new Date().getFullYear()} KnowMediQ. All rights reserved.
-            </span>
-            <span className="hidden md:inline">—</span>
-            <a href="#" className="hover:text-secondary transition-colors">
-              Privacy Policy
-            </a>
-            <span>/</span>
-            <a href="#" className="hover:text-secondary transition-colors">
-              Terms & Conditions
-            </a>
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-2 text-gray-400 text-[13px] font-medium">
+            <p>© 2025 KnowMediQ, All rights reserved —</p>
+            <div className="flex items-center gap-1">
+              <a
+                href="#"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <span>/</span>
+              <a
+                href="#"
+                className="text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                Terms & Conditions
+              </a>
+            </div>
           </div>
         </div>
       </div>
