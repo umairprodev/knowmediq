@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#0f172a] text-white pt-24 pb-12 font-sans">
+    <footer className="bg-[#0f121a] text-white pt-24 pb-12 font-sans">
       <div className="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20 px-4 md:px-0">
           {/* Logo Section */}
