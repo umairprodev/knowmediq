@@ -108,52 +108,40 @@ const Footer = () => {
               Social Networks
             </h4>
             <div className="flex gap-6 mb-10">
-              <a
-                href="#"
-                className="text-[#03a9f4] hover:text-white transition-colors"
-              >
+              <a href="#" className="text-[#03a9f4]  transition-colors">
                 <svg
-                  width="20"
-                  height="20"
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
                   <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2m-.2 2A3.6 3.6 0 004 7.6v8.8A3.6 3.6 0 007.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6A3.6 3.6 0 0016.4 4H7.6m5.4 2c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0 2a4 4 0 100 8 4 4 0 000-8m4.9-.5a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z" />
                 </svg>
               </a>
-              <a
-                href="#"
-                className="text-[#03a9f4] hover:text-white transition-colors"
-              >
+              <a href="#" className="text-[#03a9f4] transition-colors">
                 <svg
-                  width="20"
-                  height="20"
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
                   <path d="M12 2.04c-5.5 0-10 4.49-10 10.02 0 5 3.66 9.15 8.44 9.9v-7h-2.54v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 008.44-9.9c0-5.53-4.5-10.02-10-10.02z" />
                 </svg>
               </a>
-              <a
-                href="#"
-                className="text-[#03a9f4] hover:text-white transition-colors"
-              >
+              <a href="#" className="text-[#03a9f4] transition-colors">
                 <svg
-                  width="20"
-                  height="20"
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
                   <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a2.7 2.7 0 0 0-2.7-2.7c-1.2 0-2.3 1.1-2.3 2.5v5.5h-2.5v-8.5h2.5v1.2a3 3 0 0 1 2.5-1.5 3.5 3.5 0 0 1 3.5 3.5v5.3h-2.5m-11-8.5h2.5v8.5h-2.5v-8.5m1.25-4.25a1.5 1.5 0 1 1-1.5 1.5 1.5 1.5 0 0 1 1.5-1.5z" />
                 </svg>
               </a>
-              <a
-                href="#"
-                className="text-[#03a9f4] hover:text-white transition-colors"
-              >
+              <a href="#" className="text-[#03a9f4] transition-colors">
                 <svg
-                  width="20"
-                  height="20"
+                  width="24"
+                  height="24"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
