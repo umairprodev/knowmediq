@@ -6,11 +6,26 @@ const Header = () => {
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   const services = [
-    "Home care",
-    "Mental health",
-    "Well-being",
-    "Blood analyses",
-    "Drug delivery",
+    {
+      label: "Home care",
+      url: "https://d2faih2o3rqolw.cloudfront.net/services/soins-a-domicile",
+    },
+    {
+      label: "Mental health",
+      url: "https://d2faih2o3rqolw.cloudfront.net/services/sante-mentale",
+    },
+    {
+      label: "Well-being",
+      url: "https://d2faih2o3rqolw.cloudfront.net/services/bien-etre",
+    },
+    {
+      label: "Song analyses",
+      url: "https://d2faih2o3rqolw.cloudfront.net/services/analyses-de-sang",
+    },
+    {
+      label: "Drug delivery",
+      url: "https://d2faih2o3rqolw.cloudfront.net/services/livraison-de-medicaments",
+    },
   ];
 
   return (
@@ -40,10 +55,10 @@ const Header = () => {
               />
             </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden xl:flex items-center space-x-6 xl:space-x-8">
+            {/* Center Navigation */}
+            <div className="hidden xl:flex flex-1 justify-center items-center space-x-6 xl:space-x-8">
               <a
-                href="#"
+                href="https://d2faih2o3rqolw.cloudfront.net/"
                 className="text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
               >
                 WELCOME
@@ -70,10 +85,10 @@ const Header = () => {
                   {services.map((service, index) => (
                     <a
                       key={index}
-                      href="#"
+                      href={service.url}
                       className="block px-6 py-3 text-gray-600 hover:bg-gray-50 hover:text-primary text-[13px] font-medium transition-colors"
                     >
-                      {service}
+                      {service.label}
                     </a>
                   ))}
                 </div>
@@ -87,29 +102,35 @@ const Header = () => {
               </a>
 
               <a
-                href="#"
+                href="https://d2faih2o3rqolw.cloudfront.net/blog"
                 className="text-gray-700 hover:text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
               >
                 BLOG
               </a>
 
               <a
-                href="#"
+                href="https://d2faih2o3rqolw.cloudfront.net/contact"
                 className="text-gray-700 hover:text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
               >
                 CONTACT
               </a>
 
               <a
-                href="#"
+                href="https://d2faih2o3rqolw.cloudfront.net/english"
                 className="text-gray-700 hover:text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
               >
                 ENGLISH
               </a>
+            </div>
 
-              <button className="bg-secondary hover:bg-blue-700 text-white px-8 py-3 rounded-none font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-all">
+            {/* Right Action */}
+            <div className="hidden xl:flex items-center">
+              <a
+                href="https://knowmediq-dev.auth.ca-central-1.amazoncognito.com/login?client_id=25naet594tdqusl72un7opjdng&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Flaonwflijb.execute-api.ca-central-1.amazonaws.com%2Fdev%2Fcallback&state=eyJmbG93IjoicGF0aWVudCIsInJlZGlyZWN0VG8iOiJodHRwczovL2QyZmFpaDJvM3Jxb2x3LmNsb3VkZnJvbnQubmV0L3JlZGlyZWN0LWFmdGVyLWxvZ2luIiwibm9uY2UiOiJJblg4NXVmVF9tMG1WREE4VkxHVTE3M2dPcTJJdTVuNGxVY1dBczcyNV9RIn0&nonce=InX85ufT_m0mVDA8VLGU173gOq2Iu5n4lUcWAs725_Q"
+                className="bg-secondary hover:bg-blue-700 text-white px-8 py-3 rounded-none font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-all"
+              >
                 JOIN
-              </button>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -215,11 +236,11 @@ const Header = () => {
                 {services.map((service, index) => (
                   <a
                     key={index}
-                    href="#"
+                    href={service.url}
                     className="block text-gray-500 text-lg hover:text-primary transition-colors py-1"
                     onClick={() => setIsOpen(false)}
                   >
-                    {service}
+                    {service.label}
                   </a>
                 ))}
               </div>
@@ -258,9 +279,13 @@ const Header = () => {
             </a>
 
             <div className="pt-4 w-full px-8 pb-12">
-              <button className="w-full bg-secondary text-white py-4 font-bold text-sm tracking-widest uppercase shadow-lg">
+              <a
+                href="https://knowmediq-dev.auth.ca-central-1.amazoncognito.com/login?client_id=25naet594tdqusl72un7opjdng&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Flaonwflijb.execute-api.ca-central-1.amazonaws.com%2Fdev%2Fcallback&state=eyJmbG93IjoicGF0aWVudCIsInJlZGlyZWN0VG8iOiJodHRwczovL2QyZmFpaDJvM3Jxb2x3LmNsb3VkZnJvbnQubmV0L3JlZGlyZWN0LWFmdGVyLWxvZ2luIiwibm9uY2UiOiJJblg4NXVmVF9tMG1WREE4VkxHVTE3M2dPcTJJdTVuNGxVY1dBczcyNV9RIn0&nonce=InX85ufT_m0mVDA8VLGU173gOq2Iu5n4lUcWAs725_Q"
+                className="block w-full bg-secondary text-white py-4 font-bold text-sm tracking-widest uppercase shadow-lg text-center"
+                onClick={() => setIsOpen(false)}
+              >
                 JOIN
-              </button>
+              </a>
             </div>
           </div>
         </div>
