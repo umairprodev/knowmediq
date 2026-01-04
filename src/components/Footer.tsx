@@ -5,11 +5,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20 px-4 md:px-0">
           {/* Logo Section */}
           <div className="flex flex-col items-center lg:items-start">
-            <div className="bg-white p-6 rounded-sm inline-block">
+            <div className="bg-white p-3 rounded-sm inline-block">
               <img
                 src="/logo.png"
                 alt="KnowMediQ Logo"
-                className="h-16 w-auto"
+                className="h-24 w-auto"
               />
             </div>
           </div>
