@@ -254,7 +254,7 @@ const Header = () => {
               href="https://d2faih2o3rqolw.cloudfront.net/solutions"
               className="text-gray-600 font-medium text-2xl"
             >
-              Solutions
+              AI Solutions
             </a>
 
             <a
