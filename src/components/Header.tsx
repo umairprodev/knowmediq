@@ -65,7 +65,7 @@ const Header = () => {
             <div className="hidden xl:flex flex-1 justify-center items-center space-x-6 xl:space-x-8">
               <a
                 href="https://d2faih2o3rqolw.cloudfront.net/"
-                className="text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
+                className="text-gray-700 hover:text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
               >
                 WELCOME
               </a>
@@ -102,7 +102,7 @@ const Header = () => {
 
               <a
                 href="https://d2faih2o3rqolw.cloudfront.net/solutions"
-                className="text-gray-700 hover:text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
+                className="text-primary font-bold text-[11px] xl:text-[13px] tracking-widest uppercase transition-colors"
               >
                 AI SOLUTIONS
               </a>
@@ -204,7 +204,7 @@ const Header = () => {
           <div className="flex flex-col items-center space-y-8 grow">
             <a
               href="https://d2faih2o3rqolw.cloudfront.net/"
-              className="text-primary font-medium text-2xl"
+              className="text-gray-600 font-medium text-2xl"
             >
               Welcome
             </a>
@@ -252,7 +252,7 @@ const Header = () => {
 
             <a
               href="https://d2faih2o3rqolw.cloudfront.net/solutions"
-              className="text-gray-600 font-medium text-2xl"
+              className="text-primary font-medium text-2xl"
             >
               AI Solutions
             </a>
